@@ -9,6 +9,6 @@ p {
 }
 
 a, a:hover, a:active, a:visited {
-    color: #333;
+    color: var(--clr-neutral-100);
     text-decoration: none;
 }

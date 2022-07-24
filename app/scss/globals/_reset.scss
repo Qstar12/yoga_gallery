@@ -25,3 +25,8 @@ span {
         margin-right: .5rem;
     }
 }
+
+a, a:visited, a:hover {
+    color: var(--clr-primary-100);
+    text-decoration: none;
+}

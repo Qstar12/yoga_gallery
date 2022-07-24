@@ -1,5 +1,11 @@
 @use "../util/" as util;
 
+@mixin mq($size) {
+    @media only screen and (min-width: $size) {
+        @content
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +14,7 @@
 html {
     font-size: 100%;
     box-sizing: border-box;
+    
 }
 
 *, *:before, *:after {
@@ -17,12 +24,113 @@ html {
 body {
     font-family: util.$font-family;
     font-size: 1rem;
-    color: var(--clr-neutral-500);
+    
     background-color: var(--clr-neutral-100);
     height: 100vh;
 }
 
 main {
-    margin: 0 1.5rem;
+    margin: 0 .5rem;
     height: 100vh;
+}
+
+.offcanvas-body a {
+    color: var(--clr-neutral-600) !important;
+}
+
+@include mq(375px) {
+    .row {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .gallery__item {
+              width: 100%;
+                
+    }
+}
+
+@include mq(768px) {
+    .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .gallery__item {
+        width: 100%;
+    }
+          
+}
+
+
+@include mq(768px){
+
+    
+    .footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      
+     
+     
+      &__contact {
+        
+        width:379px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        text-align: left;
+        margin-right: 80px;
+      }
+      &__contact-grid {
+        grid-column: 2 / 3;
+        margin-right: 120px;
+      }
+    }
+   
+     
+    
+    
+    .links__internal {
+      grid-column: 3 / 4;
+      margin-right: 80px;
+      width: 69px;
+      
+    }
+    .links__external {
+      grid-column: 4 / 5;
+      width: 87px;
+      margin-right: 108px;
+    }
+    .links__external > a:hover {
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.7s ease-in-out;
+    }
+    .icons  {
+      display: flex;
+      justify-content: space-between;
+      grid-column: 5 / 6;
+      width: 100%;
+      
+
+    
+    }
+    
+}
+
+.footer {
+
+    @include mq(375px){
+        padding: 20.5rem 2rem 8rem 2rem;
+        position: relative;
+        top: 184%;
+        z-index: -1;
+    }
+}
+.footer {
+
+    @include mq(768px){
+        padding: 12.5rem 4rem 0rem 4rem;
+        position: relative;
+        z-index: -1;
+        top: 200%;
+        
+    }
 }

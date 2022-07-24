@@ -1,97 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="./lightbox2-2.11.3/lightbox.css" rel="stylesheet">
-        <link rel="stylesheet" href="./lightbox2-2.11.3/dist/css/lightbox.css">
-        <link rel="stylesheet" href="/dist/style.css">
-        <script src="https://code/jquery.com/jquery-3.1.1.js"></script>
-        <title>Document</title>
-    </head>
-    <body>
 
-        <header>
-            <nav class="navbar  bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="/images/3x/Asset 1logo@3x.png" alt="" width="40" height="28" class="d-inline-block align-text-top"></a>
-                </div>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./lightbox2-2.11.3/lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="./lightbox2-2.11.3/dist/css/lightbox.css">
+    <link rel="stylesheet" href="/dist/style.css">
+    <script src="https://code/jquery.com/jquery-3.1.1.js"></script>
+    <title>Document</title>
+</head>
 
-        <main>
-            <section class="container row grid">
-                <div class="container__img">
-                    <img src="/images/profileImg.png" alt="">
-                    <ul class="container__list-group">
-                        <li>1,000</li> <span>followers</span>
-                    
-                    
-                        <li>4</li><span>post</span>
-                    
-                    
-                        <li>900</li><span>following</span>
-                    </ul>
-                </div>
-                
-                <div class="container__description">
-                    <div class="container__name">
-                        <span><h1>My Yoga Gallery</h1></span>
-                        <p class="snippet">
-                            Self-care is taking care of ourselves in positive ways that improve our health, enhance our well-being, and improve our ability to cope with lifes challenges. Self-care is any type of physical, mental, or spiritual activity you do for yourself that can help you feel better, healthier, and have more energy.
-                        </p>
-                        <a href="javascript:void();" class="readmore-btn">Read More</a>
-                        <button class="btn btn-primary">Follow</button>
+<body>
+
+    <header>
+        <nav class="navbar  bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="/images/3x/Asset 1logo@3x.png" alt="" width="40" height="28"
+                        class="d-inline-block align-text-top"></a>
+                <button class="btn btn-primary rounded-pill type=" button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"">Get Started!</button>
+                    <div class=" offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                   
-                </div>
-            </section>
-
-
-            <section class="container">
-                <div class="gallery__header">
-                    <h3></h3>
-                </div>
-                <div class="row row-cols-auto g-2 gallery">
-                    <div class="gallery__item col-6 brighten">
-                        <a href="./lightbox2-2.11.3/dist/images/yoga_gallery_1.png" data-lightbox="yoga">
-                            <img src="./lightbox2-2.11.3/dist/images/yoga_gallery_1.png" alt="">
-                        </a>
+                    <div class="offcanvas-body">
+                        <div>
+                            <a href="./about.html">About</a>
+                        </div>
                     </div>
-                    <div class="gallery__item col-6 brighten">
-                        <a href="./lightbox2-2.11.3/dist/images/yoga_gallery_2.png" data-lightbox="yoga">
-                            <img src="./lightbox2-2.11.3/dist/images/yoga_gallery_2.png" alt="">
-                        </a>
-                    </div>
-                    <div class="gallery__item col-6 brighten">
-                        <a href="./lightbox2-2.11.3/dist/images/yoga_gallery_3.png" data-lightbox="yoga">
-                            <img src="./lightbox2-2.11.3/dist/images/yoga_gallery_3.png" alt="">
-                        </a>
-                    </div>
-                    
-                    <div class="gallery__item col-6 brighten">
-                        <a href="./lightbox2-2.11.3/dist/images/yoga_gallery_4.png" data-lightbox="yoga">
-                            <img src="./lightbox2-2.11.3/dist/images/yoga_gallery_4.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                
-                
+            </div>
+            </div>
 
-            </main>
-            
+        </nav>
+    </header>
+    <section class="banner">
+        <img src="" alt="">
+        <div class="banner__contents">
+            <div class="banner__title">
+                <h1>Yogi's gallery</h1>
+            </div>
+            <div class="banner__snippet">
+                A collection of yoga inspired images brought to you by a community of yogis.
+            </div>
+
+        </div>
+    </section>
+   
 
 
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-            <script src="./lightbox2-2.11.3/src/js/lightbox.js"></script>
-            <script src="./lightbox2-2.11.3/dist/js/lightbox-plus-jquery.js"></script>
-            <script src="/app/js/main.js"></script>
-        </body>
-    </body>
+<main>
+    <section id="container">
+
+        <div class="row row-cols-auto g-2 gallery">
+            <div class="gallery__item col-6 brighten">
+                <a href="./lightbox2-2.11.3/dist/images/yoga_gallery_1.png" data-lightbox="yoga">
+                    <img src="./lightbox2-2.11.3/dist/images/yoga_gallery_1.png" alt="">
+                </a>
+            </div>
+            <div class="gallery__item col-6 brighten">
+                <a href="./lightbox2-2.11.3/dist/images/yoga_gallery_2.png" data-lightbox="yoga">
+                    <img src="./lightbox2-2.11.3/dist/images/yoga_gallery_2.png" alt="">
+                </a>
+            </div>
+            <div class="gallery__item col-6 brighten">
+                <a href="./lightbox2-2.11.3/dist/images/yoga_gallery_3.png" data-lightbox="yoga">
+                    <img src="./lightbox2-2.11.3/dist/images/yoga_gallery_3.png" alt="">
+                </a>
+            </div>
+
+            <div class="gallery__item col-6 brighten">
+                <a href="./lightbox2-2.11.3/dist/images/yoga_gallery_4.png" data-lightbox="yoga">
+                    <img src="./lightbox2-2.11.3/dist/images/yoga_gallery_4.png" alt="">
+                </a>
+            </div>
+            <div class="gallery__item col-6 brighten">
+                <a href="./lightbox2-2.11.3/dist/images/3x/yoga_gallery_5.jpeg" data-lightbox="yoga">
+                    <img src="./lightbox2-2.11.3/dist/images/3x/yoga_gallery_5.jpeg" alt="">
+                </a>
+            </div>
+            <div class="gallery__item col-6 brighten">
+                <a href="./lightbox2-2.11.3/dist/images/3x/yoga_gallery_6.jpeg" data-lightbox="yoga">
+                    <img src="./lightbox2-2.11.3/dist/images/3x/yoga_gallery_6.jpeg" alt="">
+                </a>
+            </div>
+            <div class="gallery__item col-6 brighten">
+                <a href="./lightbox2-2.11.3/dist/images/3x/yoga_gallery_7.jpeg" data-lightbox="yoga">
+                    <img src="./lightbox2-2.11.3/dist/images/3x/yoga_gallery_7.jpeg" alt="">
+                </a>
+            </div>
+            <div class="gallery__item col-6 brighten">
+                <a href="./lightbox2-2.11.3/dist/images/3x/yoga_gallery_8.jpeg" data-lightbox="yoga">
+                    <img src="./lightbox2-2.11.3/dist/images/3x/yoga_gallery_8.jpeg" alt="">
+                </a>
+            </div>
+            <div class="gallery__item col-6 brighten">
+                <a href="./lightbox2-2.11.3/dist/images/3x/yoga_gallery_9.jpeg" data-lightbox="yoga">
+                    <img src="./lightbox2-2.11.3/dist/images/3x/yoga_gallery_9.jpeg" alt="">
+                </a>
+            </div>
+            <div class="gallery__item col-6 brighten">
+                <a href="./lightbox2-2.11.3/dist/images/3x/yoga_gallery_10.jpeg" data-lightbox="yoga">
+                    <img src="./lightbox2-2.11.3/dist/images/3x/yoga_gallery_10.jpeg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+    <footer class="footer">
+
+        <div class="footer__contact">
+            <div class="location">
+                <span>
+                    <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.188 0C2.74 0 0 2.79 0 6.3 0 10.98 6.188 18 6.188 18s6.187-7.02 6.187-11.7c0-3.51-2.74-6.3-6.188-6.3zm0 8.55c-1.238 0-2.21-.99-2.21-2.25s.972-2.25 2.21-2.25c1.237 0 2.21.99 2.21 2.25s-.973 2.25-2.21 2.25z"
+                            fill="#FFF" fill-rule="evenodd" />
+                    </svg>
+                </span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua</p>
+            </div>
+        </div>
+        <div class="footer__contact-grid">
+            <div class="footer__contact_number">
+                <span>
+                    <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17 12.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H1C.4 0 0 .4 0 1c0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1zM16 9h2c0-5-4-9-9-9v2c3.9 0 7 3.1 7 7zm-4 0h2c0-2.8-2.2-5-5-5v2c1.7 0 3 1.3 3 3z"
+                            fill="#FFF" fill-rule="evenodd" />
+                    </svg>
+                </span>
+                <p>+1-543-123-4567</p>
+            </div>
+
+            <div class="footer__contact_email">
+                <span>
+                    <svg width="20" height="16" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" fill-rule="evenodd">
+                            <path d="M-2-4h24v24H-2z" />
+                            <path
+                                d="M18 0H2C.9 0 0 .9 0 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zm0 14h-2V5.2L10 9 4 5.2V14H2V2h1.2L10 6.2 16.8 2H18v12z"
+                                fill="#FFF" />
+                        </g>
+                    </svg>
+                </span>
+                <p>example@yourmail.com</p>
+            </div>
+        </div>
+
+        <div class="links__internal">
+            <a href="#">About Us</a>
+            <a href="#">Jobs</a>
+            <a href="#">Press</a>
+            <a href="#">Blog</a>
+        </div>
+        <div class="links__external">
+            <a href="#">Contact Us</a>
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+        </div>
+
+        <div class="icons">
+            <div class="icons__facebook">
+                <i class="fa-brands fa-facebook-f text-white"></i>
+            </div>
+            <div class="icons__twitter">
+                <i class="fa-brands fa-twitter text-white"></i>
+            </div>
+            <div class="icons__instagram">
+                <i class="fa-brands fa-instagram text-white"></i>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <script src="./lightbox2-2.11.3/src/js/lightbox.js"></script>
+    <script src="./lightbox2-2.11.3/dist/js/lightbox-plus-jquery.js"></script>
+    <script src="/app/js/main.js"></script>
+
+</body>
+
 </html>

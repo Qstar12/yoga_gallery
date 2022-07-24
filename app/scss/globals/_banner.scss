@@ -1,0 +1,29 @@
+@use '../util/' as util;
+.banner {
+        
+        min-height:50%;
+        background-color:var(--clr-neutral-600);
+       
+     
+        
+    &__contents {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50vh;
+        padding: 0 1rem;
+    }
+
+    &__title h1{
+        font-size: 3.75rem;
+        line-height: 1;
+        color: var(--clr-neutral-100);
+        margin-bottom: 2rem;
+    }
+
+    &__snippet {
+        font-size: util.$font-base;
+        line-height: 1;
+        color: var(--clr-neutral-100);
+    }
+} 
