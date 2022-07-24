@@ -21,21 +21,21 @@
 }
 
 .banner {
-  min-height: 50%;
+  min-height: 20%;
   background-color: var(--clr-neutral-600);
 }
 .banner__contents {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 50vh;
-  padding: 0 1rem;
+  height: 20vh;
+  padding: 0 1.5rem;
 }
 .banner__title h1 {
-  font-size: 3.75rem;
-  line-height: 1;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   color: var(--clr-neutral-100);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .banner__snippet {
   font-size: 1rem;
@@ -67,6 +67,27 @@ body {
 main {
   margin: 0 0.5rem;
   height: 100vh;
+}
+
+#container__About {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#snippet__About {
+  width: 80%;
+  color: var(--clr-neutral-500);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.contents__About {
+  margin-left: 1.5rem;
+}
+
+.contents__About h1 {
+  margin-bottom: 1rem;
 }
 
 .offcanvas-body a {
@@ -129,6 +150,44 @@ main {
     width: 100%;
   }
 }
+@media only screen and (min-width: 768px) {
+  .footer__About {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .footer__About__contact {
+    width: 379px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: left;
+    margin-right: 80px;
+  }
+  .footer__About__contact-grid {
+    grid-column: 2/3;
+    margin-right: 120px;
+  }
+  .links__internal {
+    grid-column: 3/4;
+    margin-right: 80px;
+    width: 69px;
+  }
+  .links__external {
+    grid-column: 4/5;
+    width: 87px;
+    margin-right: 108px;
+  }
+  .links__external > a:hover {
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.7s ease-in-out;
+  }
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 5/6;
+    width: 100%;
+  }
+}
 @media only screen and (min-width: 375px) {
   .footer {
     padding: 20.5rem 2rem 8rem 2rem;
@@ -144,6 +203,23 @@ main {
     position: relative;
     z-index: -1;
     top: 200%;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .footer__About {
+    padding: 12.5rem 2rem 0rem 2rem;
+    position: relative;
+    top: 80%;
+    z-index: -1;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer__About {
+    padding: 12.5rem 4rem 0rem 4rem;
+    position: relative;
+    top: 10%;
   }
 }
 
@@ -247,6 +323,89 @@ button.btn.btn-primary {
   text-decoration: none;
 }
 
+.footer__About {
+  background: var(--clr-neutral-600);
+}
+.footer__About__contact {
+  margin-bottom: 1rem;
+}
+.footer__About .location {
+  width: 100%;
+  display: flex;
+}
+.footer__About .location > span {
+  width: 13px;
+  height: 18px;
+  float: left;
+}
+.footer__About .location > p {
+  margin-left: 1.9rem;
+  float: right;
+  color: var(--clr-neutral-100);
+}
+.footer__About__contact_number {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1rem;
+}
+.footer__About__contact_number span {
+  width: 13px;
+  height: 13px;
+  float: left;
+}
+.footer__About__contact_number > p {
+  margin-left: 1.9rem;
+  float: right;
+  color: var(--clr-neutral-100);
+}
+.footer__About__contact_email {
+  width: 100%;
+  display: flex;
+  margin-bottom: 4rem;
+}
+.footer__About__contact_email span {
+  width: 20px;
+  height: 16px;
+  float: left;
+}
+.footer__About__contact_email > p {
+  margin-left: 1.9rem;
+  float: right;
+  color: var(--clr-neutral-100);
+}
+
+/**
+* TODO: Add flex property for header class
+* !Footer Links
+*/
+.links {
+  margin-bottom: 3.5rem;
+}
+.links__internal {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3.42rem;
+}
+.links__internal > a {
+  text-decoration: none;
+  font-family: var(--ff-secondary);
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: var(--clr-neutral-100);
+}
+.links__external {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 56px;
+}
+.links__external > a {
+  font-family: var(--ff-secondary);
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: var(--clr-neutral-100);
+  text-decoration: none;
+}
+
 #container {
   display: flex;
   justify-content: center;
@@ -275,6 +434,10 @@ button.btn.btn-primary {
 
 nav {
   height: 100px;
+}
+
+.container-fluid {
+  padding-left: 1.5rem;
 }
 
 ul {

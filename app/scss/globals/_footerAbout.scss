@@ -1,0 +1,99 @@
+.footer__About {
+    background: var(--clr-neutral-600);
+    
+  
+    &__contact {
+      margin-bottom: 1rem;
+    }
+  
+    .location {
+      width: 100%;
+      display: flex;
+   }
+    .location > span {
+      width: 13px;
+      height: 18px;
+      float: left;
+    }
+    .location > p {
+      margin-left: 1.9rem;
+      float: right;
+      color: var(--clr-neutral-100);
+    }
+  
+    &__contact_number {
+      width: 100%;
+      display: flex;
+      margin-bottom: 1rem;
+      
+    }
+    
+    &__contact_number span {
+      width: 13px;
+      height: 13px;
+      float: left;
+    
+    }
+    
+    &__contact_number > p {
+      margin-left: 1.9rem;
+      float: right;
+      color: var(--clr-neutral-100);
+      
+    }
+  
+    &__contact_email {
+      width: 100%;
+      display: flex;
+      margin-bottom: 4rem;
+    }
+    &__contact_email span  {
+      width: 20px;
+      height: 16px;
+      float: left;
+    }
+    &__contact_email > p {
+      margin-left: 1.9rem;
+      float: right;
+      color: var(--clr-neutral-100);
+    }
+
+  }
+  
+  
+  /**
+  * TODO: Add flex property for header class
+  * !Footer Links
+  */
+  
+  .links {
+    margin-bottom: 3.5rem;
+    &__internal {
+      display:flex;
+      flex-direction: column;
+      margin-bottom: 3.42rem;
+     
+    }
+    &__internal > a {
+    text-decoration: none;
+      font-family: var(--ff-secondary);
+      font-size: 16px;
+      margin-bottom: 16px;
+      color: var(--clr-neutral-100);
+  
+    }
+    &__external {
+      display:flex;
+      flex-direction: column;
+      margin-bottom: 56px;
+    }
+    &__external > a {
+      font-family: var(--ff-secondary);
+      font-size: 16px;
+      margin-bottom: 16px;
+      color: var(--clr-neutral-100);
+      text-decoration: none;
+    }
+  
+    
+  }
